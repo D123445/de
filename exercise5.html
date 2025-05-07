@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     div{
+        background-color: black;
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+    }
+    body{
+display: flex;
+flex-direction: row;
+gap: 5px;
+    }
+    
+    @media only screen and (max-width:900px) {
+       body  {
+            display: grid;
+            grid-template-columns: auto auto auto  ;
+            
+        }
+
+    }
+    @media only screen and (max-width:600px) {
+       body  {
+            display: grid;
+            grid-template-columns: auto auto   ;
+            
+        }
+        
+    }
+    @media only screen and (max-width:480px) {
+       body  {
+            display: grid;
+            grid-template-columns: auto ;
+            
+        }
+        
+    } 
+</style>
+<body>
+    
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>
